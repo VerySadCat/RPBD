@@ -87,6 +87,7 @@ namespace RPBD_2.forms
                         if (frm.ShowDialog() == DialogResult.OK)
                         {
                             dGVUsers.DataSource = db.getAllUser();
+                            dGVUsers.DataSource = db.getAllUser();
                         }
                     }
                 }
