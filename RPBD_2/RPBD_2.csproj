@@ -55,8 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Disease.cs" />
-    <Compile Include="Doctor.cs" />
+    <Compile Include="DBSched\Disease.cs" />
+    <Compile Include="DBSched\Doctor.cs" />
     <Compile Include="forms\adminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +81,10 @@
     <Compile Include="forms\UPDUsers.Designer.cs">
       <DependentUpon>UPDUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Doctors.cs" />
+    <Compile Include="models\Patients.cs" />
+    <Compile Include="models\Priems.cs" />
+    <Compile Include="models\Schedules.cs" />
     <Compile Include="models\users.cs" />
     <Compile Include="forms\registration.cs">
       <SubType>Form</SubType>
@@ -88,19 +92,21 @@
     <Compile Include="forms\registration.Designer.cs">
       <DependentUpon>registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient.cs" />
-    <Compile Include="Priem.cs" />
+    <Compile Include="DBSched\Patient.cs" />
+    <Compile Include="DBSched\Priem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DBRoles\roles.cs" />
     <Compile Include="DBRoles\STATUSES.cs" />
     <Compile Include="DBRoles\sysdiagrams.cs" />
     <Compile Include="DBRoles\USERS.cs" />
-    <Compile Include="schedule.cs" />
-    <Compile Include="Specialty.cs" />
-    <Compile Include="StatPatient.cs" />
-    <Compile Include="sysdiagram.cs" />
+    <Compile Include="DBSched\Sched.cs" />
+    <Compile Include="DBSched\Schedule.cs" />
+    <Compile Include="DBSched\Specialty.cs" />
+    <Compile Include="DBSched\StatPatient.cs" />
+    <Compile Include="DBSched\sysdiagram.cs" />
     <Compile Include="WorkWithDBRoles.cs" />
+    <Compile Include="WorkWithDBSched.cs" />
     <EmbeddedResource Include="forms\adminForm.resx">
       <DependentUpon>adminForm.cs</DependentUpon>
     </EmbeddedResource>
